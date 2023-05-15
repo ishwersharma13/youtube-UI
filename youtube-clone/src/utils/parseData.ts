@@ -9,7 +9,6 @@ import { HomePageVideos } from "../Types";
 
 
 const API_KEY = process.env.REACT_APP_YOUTUBE_DATA_API_KEY;
-
 export const parseData = async (items: any[]) => {
   try {
     const videoIds: string[] = [];
@@ -92,6 +91,5 @@ export const parseData = async (items: any[]) => {
 
     return parsedData;
   } catch (err) {
-    // console.log(err);
   }
 };
